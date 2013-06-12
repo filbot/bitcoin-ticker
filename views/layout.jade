@@ -1,7 +1,11 @@
 doctype 5
-html
+html(ng-app="")
   head
     title= title
     link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='/stylesheets/flat-ui.css')
+    script(src='https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js')
   body
     block content
+
+    script(src='/javascripts/BBOCController.js')

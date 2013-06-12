@@ -1,5 +1,10 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  h1 [ Bitcoin Ticker ]
+  br
+  div.container(ng-controller="BBOCController")
+    p Current Mt. Gox Buy/Sell numbers for Bitcoin
+    div.btn.btn-primary{{data.bid}}
+    br
+    div.btn.btn-danger{{data.ask}}
