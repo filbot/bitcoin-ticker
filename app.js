@@ -7,9 +7,11 @@ var express = require('express'),
     routes = require('./routes'),
     user = require('./routes/user'),
     http = require('http'),
+    io = require('socket.io-client'),
     path = require('path');
 
 var app = express();
+var lastBBO = { bid : 0, ask : 0 };
 
 // all environments
 app.set('port', process.env.PORT || 3000);
