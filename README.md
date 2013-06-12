@@ -1,0 +1,4 @@
+bitcoin-ticker
+==============
+
+Bitcoin ticker
