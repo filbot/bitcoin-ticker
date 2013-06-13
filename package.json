@@ -10,5 +10,9 @@
     "jade": "*",
     "socket.io": "*",
     "socket.io-client": "*"
+  },
+  "subdomain": "filbot-bitcoin-ticker",
+  "engines": {
+    "node": "0.8.x"
   }
 }
